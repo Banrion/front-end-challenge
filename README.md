@@ -1,3 +1,20 @@
+# Leslie's Notes
+
+I created the UI to display car information from the provided api which does the following:
+
+1. Loads cars from the api with a loading indicator
+2. Displays the results in a grid format responsive to the page size
+3. Cars can be liked
+4. Cars can be hidden
+5. Cars can be filtered based on being liked, hidden, or all
+
+Additional Notes:
+The instructions requested a dislike car feature though the wireframe and assets were setup for a hide car feature. For the sake of this challenge, I assumed the hidden feature was the correct method though this should be clarified on the job before work is done.
+
+The provided custom svg icons were used even though Material UI, the UI library I used, has built in features for icons.
+
+Completed the coding challenge for Lone Wolf Technologies on 2/20/2021.
+
 # Front End Challenge
 
 Hi there!
@@ -26,12 +43,13 @@ We would like you to build a responsive user interface based on these designs, u
 ## Functionality
 
 Users should be able to do the following:
+
 1. "Like" cars (by clicking the heart icon)
 1. "Dislike" cars (by clicking the X icon)
 1. Filter cars using the dropdown menu. There should be 3 filter options:
-    1. "All Cars": Shows all cars
-    1. "Liked Cars": Shows only cars that have been "Liked"
-    1. "Disliked Cars": Shows only cars that have been "Disliked"
+   1. "All Cars": Shows all cars
+   1. "Liked Cars": Shows only cars that have been "Liked"
+   1. "Disliked Cars": Shows only cars that have been "Disliked"
 
 Visual indications for each state are shown in the [design mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 
@@ -45,15 +63,18 @@ To start developing this application, you'll need to make sure you have a few th
 If you're on mac, the easiest way to install both is probably [Homebrew](https://brew.sh/). Alternatively, for node specifically, [NVM](https://github.com/creationix/nvm#installation) is pretty nice for managing multiple installations/versions regardless of what you're working on.
 
 Once you have the above installed, you should:
+
 1. Fork this repo
 1. Git clone your fork
 
 Next, you'll need to install the project dependencies by running the following command in the top-level directory:
+
 ```sh
 yarn
 ```
 
 Once the dependencies are installed, you can start the application by running (again in the top-level directory):
+
 ```sh
 yarn start
 ```
@@ -61,12 +82,15 @@ yarn start
 This is wired up using foreman to run both the api server and the client development server. The browser should automatically open the application start page, but if it doesn't, you can find it at http://localhost:3000.
 
 ## Design Assets
+
 Design Mockup: [Invision Link](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2)
 
 Images: [static/images](static/images)
+
 - Images for the cars. These are statically served by the api from the static folder.
 
 Icons: [static/icons](static/icons)
+
 - Icons for "Like"/"Dislike". These are currently statically served by the api from the static folder. However, you should feel free to move them around, bundle them with your client, etc.
 
 ## The Client
@@ -91,6 +115,7 @@ The API is exposed at http://localhost:3001. We have taken care of proxying requ
 **We ask that you spend no more than 2-3 hours on this challenge.**
 
 At a minimum, we would like to see these things:
+
 - Responsive design/layout of content based on the [design mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 - The ability to like/dislike cars and associated changes to the UI.
 - The ability to filter cars with the dropdown menu.
@@ -102,6 +127,7 @@ We will also examine your code for readability, architectural decisions, and mod
 ## Bonus
 
 If you have additional time after completing the requirements, we'd love to see what else you can do. Here are some ideas to get you started:
+
 - Sweet animations
 - Data loading states
 - Filter by search term
@@ -114,7 +140,7 @@ Please do all of your work on a feature branch on your fork named `{your initial
 
 ## IMPORTANT:
 
-*DO NOT* submit a PR to our repository - We would like to keep all solution submissions separate and not in the public view.
+_DO NOT_ submit a PR to our repository - We would like to keep all solution submissions separate and not in the public view.
 Follow these [instructions](https://help.github.com/articles/creating-a-pull-request/) if you are unsure of the process.
 
 ## Questions / Problems / Stuck?
