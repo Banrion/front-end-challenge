@@ -22,11 +22,11 @@ function CarList({
   const classes = useStyles();
   const filterByLikes = React.useCallback(
     (cars) => cars.filter((car) => likedCars.indexOf(generateCarId(car)) > -1),
-    [cars, likedCars]
+    [likedCars]
   );
   const filterByHidden = React.useCallback(
     (cars) => cars.filter((car) => hiddenCars.indexOf(generateCarId(car)) > -1),
-    [cars, hiddenCars]
+    [hiddenCars]
   );
 
   const getCarsToShow = () => {
